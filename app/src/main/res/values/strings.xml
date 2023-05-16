@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Aston_intensive_hometask_4</string>
+    <string name="change_minutes_color">change minutes color</string>
+    <string name="change_hours_color">change hours color</string>
+    <string name="change_seconds_color">change seconds color</string>
+</resources>

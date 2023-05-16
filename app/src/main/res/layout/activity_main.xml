@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ru.verb.aston_intensive_hometask_4.CustomClock
+        android:id="@+id/custom_clock"
+        android:layout_width="@dimen/clock_size"
+        android:layout_height="@dimen/clock_size"
+        app:hours_color="@color/blue"
+        app:hours_size="5"
+        app:layout_constraintBottom_toTopOf="@id/button_change_minutes_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:minutes_color="@color/red"
+        app:minutes_size="10"
+        app:seconds_color="@color/green"
+        app:seconds_size="20" />
+
+    <Button
+        android:id="@+id/button_change_minutes_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_minutes_color"
+        app:layout_constraintBottom_toTopOf="@id/button_change_hours_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_clock" />
+
+
+    <Button
+        android:id="@+id/button_change_hours_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_hours_color"
+        app:layout_constraintBottom_toTopOf="@id/button_change_seconds_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_change_minutes_color" />
+
+
+    <Button
+        android:id="@+id/button_change_seconds_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_seconds_color"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_change_hours_color" />
+</androidx.constraintlayout.widget.ConstraintLayout>
